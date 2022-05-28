@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>Welcome to John and Helenas Wedding</title>
+</head>
+<div id="canvas">
+<header>
+    <h1 class="logo">John & Helena</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Wedding</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="rsvp-section">
+        <form class="rsvp-form">
+            <h2>Please RSVP by March 23, 2023</h2>
+            <h4><label for="name">Full name *</label></h4>
+            <input class="text-input" type="text" id="name" name="name" required>
+            <h4><label for="no-persons">Total number of persons *</label></h4>
+            <input class="text-input" type="number" id="no-persons" name="no-persons" min="1" max="10" required>
+            <h4><label for="email">Email *</label></h4>
+            <input class="text-input" type="email" id="email" name="email" required>
+            <h4>Food allergies/preferences</h4>
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox" id="food" value="vegetarian" name="food">
+            <label for="vegetarian">Vegan</label>
+            <input type="checkbox" id="food" value="vegan" name="food">
+            <label for="allergy">Allergy</label>
+            <input class="text-input" type="text" id="food" name="allergy">
+            <h4><label for="song">A song you'd like to dance to</label></h4>
+            <input class="text-input" type="text" id="song" name="song">
+            <input class="submit-button" type="submit" value="RSVP!">
+            <h4><label for="message">Message</label></h4>
+            <input class="text-input-message" type="text" id="message" name="message">
+        </form>
+    </section>
+    
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Wedding</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <p>J<span class="footer-logo">&</span>H</p>
+
+        <div class="footer-contact">
+        <p>Helena</p>
+        <ul class="footer-contact-h">
+            <li><a href="https://www.facebook.com/helena.norrelyn" target="_blank">Facebook</a></li>
+            <li><a href="mailto:elothere@live.com" target="_blank">Email</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-contact">
+        <p>John</p>
+        <ul class="footer-contact-j">
+            <li><a href="https://www.facebook.com/johneliaseriksson" target="_blank">Facebook</a></li>
+            <li><a href="mailto:john.e.eriksson@gmail.com" target="_blank">Email</a></li>
+        </ul>
+        </div>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/17e7553796.js" crossorigin="anonymous"></script>
+</body>
+</div>
+</html>
