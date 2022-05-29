@@ -1,6 +1,8 @@
-/* fonts */
+/* font imports */
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
+
+/* main styling and fonts*/
 
 html {
     background-color:rgb(243, 243, 242);
@@ -12,17 +14,91 @@ h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
+p {
+	font-family: Libre Baskerville, sans-serif;
+	margin: 0;
+	margin-bottom: 0.85em;
+}
+
+/* nav and logo */
+
 .logo {
 	font-family: Great Vibes, sans-serif;
 	letter-spacing: 0.05em;
+	text-align: center;
+	font-size: 4rem;
+	margin-bottom: 1rem;
 }
 
-p {
-	font-family: Libre Baskerville, sans-serif;
+.logo a {
+	text-decoration: none;
 }
 
+.logo a:visited {
+	color: #000;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+nav a {
+	display: inline-block;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+	color:blue;
+	text-decoration:underline;
+	
+}
+
+nav a:visited {
+	color: #000;
+}
+
+/* hero image */
+
+.hero {
+	background-color: grey;
+	background-image: url(https://hliresort.com/wp-content/uploads/2018/04/Wedding-Hero-1.jpg);
+	background-blend-mode: multiply;
+	color: white;
+	text-align: center;
+	padding: 15vh 0;
+}
+
+/* home invitation */
+
+.invitation {
+	text-align: center;
+	line-height: 1.3em;
+}
+
+.invitation h3 {
+	line-height: 1.3em;
+}
+
+/* home page images */
+
+.image-section {
+	display: flex;
+	width: 90%;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.image {
+	display: block;
+	flex: 1, 1, 0;
+}
 
 /* canvas style */
+
 #canvas {
      margin: 100px auto;
 	 border-style: solid;
