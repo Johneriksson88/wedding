@@ -2,7 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
 
-/* main styling and fonts*/
+/* canvas style */
+
+#canvas {
+	margin: 100px auto;
+	border-style: solid;
+	border-color: #eee;
+	max-width: 800px;
+	padding: 100px 100px 0;
+	background-color: #fff;
+}
+
+/* general styling and fonts*/
 
 html {
     background-color:rgb(243, 243, 242);
@@ -32,12 +43,18 @@ p {
 
 .logo a {
 	text-decoration: none;
+	font-weight: 200;
 }
 
-.logo a:visited {
-	color: #000;
+nav {
+	text-transform: uppercase;
 }
 
+.top-nav {
+	margin-bottom: 1em;
+	padding: 1px;
+	border-radius: 3px;
+}
 nav ul{
 	display: flex;
 	list-style: none;
@@ -49,6 +66,12 @@ nav a {
 	display: inline-block;
 	padding: 0.5em;
 	text-decoration: none;
+	color: #333333;
+}
+
+.active {
+	text-decoration: underline;
+	color: black;
 }
 
 nav a:hover, nav a:focus {
@@ -57,8 +80,8 @@ nav a:hover, nav a:focus {
 	
 }
 
-nav a:visited {
-	color: #000;
+nav a:visited, .logo a:visited {
+	color: inherit;
 }
 
 /* hero image */
@@ -72,11 +95,12 @@ nav a:visited {
 	padding: 15vh 0;
 }
 
-/* home invitation */
+/* invitation text*/
 
 .invitation {
 	text-align: center;
 	line-height: 1.3em;
+	margin-top: 20px;
 }
 
 .invitation h3 {
@@ -97,15 +121,57 @@ nav a:visited {
 	flex: 1, 1, 0;
 }
 
-/* canvas style */
+/* footer */
 
-#canvas {
-     margin: 100px auto;
-	 border-style: solid;
-	 border-color: #eee;
-	 max-width: 800px;
-	 padding: 100px 100px 0;
-	 background-color: #fff;
+footer {
+	padding: 3em 1em;
+	color: #333333;
+	display: flex;
+	justify-content: center;
+	
+}
+.footer-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.footer-nav a {
+	color: inherit;
+	padding: 0.75em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.footer-nav a:hover, .footer-nav a:focus {
+	text-decoration: underline;
+}
+
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	gap: 1rem;
+}
+
+.footer-contact li {
+	list-style: none;
+	font-size: 16px;
+}
+
+.footer-contact a {
+	text-decoration: none;
+}
+
+.footer-heart {
+	font-size: 50px;
+	display: flex;
+	margin: 0 auto;
+	color:red;
 }
 
 /* time table */
