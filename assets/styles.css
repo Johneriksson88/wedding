@@ -1,6 +1,6 @@
 /* font imports */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Sacramento&family=Source+Sans+Pro&display=swap');
 
 /* canvas style */
 
@@ -135,11 +135,18 @@ nav a:visited, .logo a:visited {
 
 .hero {
 	background-color: grey;
-	background-image: url(https://hliresort.com/wp-content/uploads/2018/04/Wedding-Hero-1.jpg);
+	background-image: url(/assets/images/j_h_subway_small.jpg);
 	background-blend-mode: multiply;
 	color: white;
 	text-align: center;
 	padding: 15vh 0;
+}
+
+.hero-title {
+	font-family: Sacramento, sans-serif;
+	text-transform: lowercase;
+	font-weight: 100;
+	font-size: 50px;
 }
 
 /* invitation text*/
