@@ -56,6 +56,10 @@ p {
 	text-decoration: none;
 }
 
+.nav-toggle {
+	display: none;
+}
+
 nav {
 	text-transform: uppercase;
 	color: rgb(100, 98, 98);
@@ -96,6 +100,66 @@ nav li a:hover, nav li a:focus {
 
 nav a:visited, .logo a:visited {
 	color: inherit;
+}
+
+@media screen and (max-width: 520px) {
+
+	.nav-toggle-label {
+	display: flex;
+	justify-content:center;
+	margin-bottom: 30px;
+}
+
+	.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+	display: block;
+	background: black;
+	height: 3px;
+	width: 3em;
+	border-radius: 2px;
+	position: relative;
+}
+
+	.nav-toggle-label span::before, .nav-toggle-label span::after {
+	content: "";
+}
+
+	.nav-toggle-label span::before {
+	bottom: 6px;
+}
+
+	.nav-toggle-label span::after {
+	top: 3px;
+}
+	nav {
+		display: none;
+	}
+	
+	.nav-toggle:checked ~ nav {
+		display: block;
+	}
+	.nav-toggle-label {
+		display: flex;
+		align-items: center;
+	}
+
+	.top-nav ul {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.top-nav ul li {
+		align-items: center;
+		border: 1px solid black;
+		margin: 0 auto;
+		width: 130px;
+		text-align: center;
+	}
+
+	.active {
+		background-color: rgb(168, 235, 168);
+	}
+
+
 }
 
 /* hero image */

@@ -8,18 +8,25 @@
     <title>Welcome to John and Helenas Wedding</title>
 </head>
 <div id="canvas">
-<header>
-    <h1 class="logo">John & Helena</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Wedding</a></li>
-            <li><a href="rsvp.html">RSVP</a></li>
-            <li><a href="story.html" class="active">Story</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1 class="logo"><a href="index.html">John & Helena</a></h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+        <!-- hamburger menu -->
+    
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav class="top-nav">
+                <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="info.html">Wedding</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 <body>
     <section class="about-timeline">
         <div class="wrapper inner-wrapper-padding ">
@@ -172,31 +179,34 @@
                       </div>	
           </div>
       </section>
-    <footer>
-        <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Wedding</a></li>
-            <li><a href="rsvp.html">RSVP</a></li>
-            <li><a href="story.html">Story</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-        <p>J<span class="footer-logo">&</span>H</p>
+      <footer class="footer">
 
-        <div class="footer-contact">
-        <p>Helena</p>
-        <ul class="footer-contact-h">
-            <li><a href="https://www.facebook.com/helena.norrelyn">Facebook</a></li>
-            <li><a href="mailto:elothere@live.com">Email</a></li>
-        </ul>
+        <div class="footer-right">
+
+            <a href="https://www.facebook.com/johneliaseriksson"><i class="fa fa-facebook"></i></a>
+            <a href="emailto:john.e.eriksson@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/john-eriksson-890265237/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/johneliaseriksson/"><i class="fa-brands fa-instagram-square"></i></a>
+
         </div>
 
-        <div class="footer-contact">
-        <p>John</p>
-        <ul class="footer-contact-j">
-            <li><a href="https://www.facebook.com/johneliaseriksson" target="_blank">Facebook</a></li>
-            <li><a href="mailto:john.e.eriksson@gmail.com">Email</a></li>
-        </ul>
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="index.html">Home</a>
+
+                <a href="info.html">Wedding</a>
+
+                <a href="rsvp.html">RSVP</a>
+
+                <a href="story.html">Story</a>
+
+                <a href="gallery.html">Gallery</a>
+            </p>
+
+            <p>John Eriksson &copy; 2022</p>
         </div>
+
     </footer>
 
     <!-- font awesome script -->
