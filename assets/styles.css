@@ -26,7 +26,6 @@ html {
 
 h2, h3, h4, h5, h6 {
 	font-family: Libre Baskerville, sans-serif;
-	text-transform: uppercase;
 }
 
 p {
@@ -43,28 +42,31 @@ p {
 
 /* nav and logo */
 
+
 .logo {
 	font-family: Great Vibes, sans-serif;
 	letter-spacing: 0.05em;
 	text-align: center;
 	font-size: 4rem;
 	margin-bottom: 1rem;
+	font-weight: 200;
 }
 
 .logo a {
 	text-decoration: none;
-	font-weight: 200;
 }
 
 nav {
 	text-transform: uppercase;
-	color: grey;
+	color: rgb(100, 98, 98);
 	font-family: EB Garamond;
+	font-size: 20px;
 }
 
 .top-nav {
 	margin-bottom: 1em;
 	padding: 1px;
+	
 }
 .top-nav ul{
 	display: flex;
@@ -72,16 +74,18 @@ nav {
 	margin: 0;
 	padding: 0;
 	justify-content: center;
+	text-decoration: none;
 }
 .top-nav a {
 	display: inline-block;
-	padding: 0.5em;
+	padding: 10px 10px 3px 10px;
+	flex-wrap: wrap;
 	text-decoration: none;
 }
 
 .active {
-	text-decoration: underline;
-	color: black;
+	border-bottom: 1px solid black;
+	
 }
 
 nav li a:hover, nav li a:focus {
@@ -94,103 +98,75 @@ nav a:visited, .logo a:visited {
 	color: inherit;
 }
 
-/* nav divider - derived from https://codepen.io/stg/pen/ZYYQMJ */
-
-.divider {								/* minor cosmetics */
-	display: table; 
-	font-size: 24px; 
-	text-align: center; 
-	width: 100%; 						/* divider width */
-	margin: 40px auto;					/* spacing above/below */
-}
-.divider span { display: table-cell; position: relative; }
-
-.divider span:first-child, .divider span:last-child {
-	width: 50%;
-	top: 27px;							/* adjust vertical align */
-	-moz-background-size: 100% 2px; 	/* line width */
-	background-size: 100% 2px; 			/* line width */
-	background-position: 0 0, 0 100%;
-	background-repeat: no-repeat;
-}
-.divider span:first-child {				/* color changes in here */
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
-	background-image: -webkit-linear-gradient(180deg, transparent, #000);
-	background-image: -moz-linear-gradient(180deg, transparent, #000);
-	background-image: -o-linear-gradient(180deg, transparent, #000);
-	background-image: linear-gradient(90deg, transparent, #000);
-}
-.divider span:nth-child(2) {
-	color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
-}
-.divider span:last-child {				/* color changes in here */
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
-	background-image: -webkit-linear-gradient(180deg, #000, transparent);
-	background-image: -moz-linear-gradient(180deg, #000, transparent);
-	background-image: -o-linear-gradient(180deg, #000, transparent);
-	background-image: linear-gradient(90deg, #000, transparent);
-}
-
 /* hero image */
 
-.hero {
-	background-color: grey;
-	background-image: url(/assets/images/j_h_subway_small.jpg);
-	background-blend-mode: multiply;
-	color: white;
-	text-align: center;
-	padding: 15vh 0;
-}
 
+.hero-image {
+	position: relative;
+ 	text-align: center;
+  	color: white;
+	margin-bottom: 30px;
+}
 .hero-title {
 	font-family: Sacramento, sans-serif;
-	text-transform: lowercase;
-	font-weight: 100;
+	font-weight: 500;
 	font-size: 50px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-60%, -50%);
 }
 
 /* invitation text*/
 
-.invitation.important {
+.invitation-important {
 	display: flex;
-
-}
-/*
-.invitation-important-upper {
-	flex-basis: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.invitation-important-lower {
-	flex-basis: 100%;
-	flex-direction: row;
+.invitation-important-item {
+	width: 100px;
+	margin: 10px;
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-height: 20px;
+	text-align: center;
 }
-*/
+
+.invitation-important-item > * {
+	margin: 0 auto;
+}
+
 
 .invitation h3 {
 	line-height: 1.3em;
 }
 
-.invitation a {
+.invitation-important a {
 	color: black;
 	text-decoration: underline;
 }
 
-.invitation a:hover {
+.invitation-important a:hover {
 	color:gray;
 	text-decoration: underline;
 }
 
-/* home page images */
+/* image section */
 
 .image-section {
 	display: flex;
-	height: 300px;
-	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 .image {
+	flex-shrink: 1;
 	display: block;
-	flex-wrap: wrap;
+	padding: 10px;
 }
 
 /* footer - derived from https://codepen.io/slstudios/pen/mJqjeP */
@@ -199,7 +175,9 @@ nav a:visited, .logo a:visited {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  padding: 30px 0 30px 0;
+  padding: 10px 0 30px 0;
+  border-top: 1px solid black;
+  margin-top: 20px;
 }
 
 .footer .footer-left p {
