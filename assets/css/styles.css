@@ -9,7 +9,7 @@
 	border: 1px solid #DBC3AD;
 	max-width: 1000px;
 	padding: 100px 100px 0;
-	background-color: #fafafa;
+	background-color: white;
 }
 
 /* general styling and fonts*/
@@ -20,20 +20,25 @@
 	box-sizing: border-box;
 }
 html {
-    background-color:#d1d1d180;
+    background-color:#ececec80;
 }
 
 
 h2, h3, h4, h5, h6 {
-	font-family: Libre Baskerville, sans-serif;
+	font-family: EB Garamond, sans-serif;
 }
 
 h2 {
 	margin: 20px 0 20px 0;
 }
+
+h3 {
+	font-size: 20px;
+}
 h4 {
 	margin: 15px;
 	text-decoration: underline;
+	font-size: 18px;
 }
 
 p {
@@ -46,6 +51,20 @@ p {
 
 .center {
 	text-align: center;
+}
+
+.divider-1 {
+	display: flex;
+	height: 60px;
+	justify-content: center;
+	margin: 50px;
+}
+
+.divider-2 {
+	display: flex;
+	height: 40px;
+	justify-content: center;
+	margin: 50px;
 }
 
 
@@ -72,7 +91,7 @@ p {
 
 nav {
 	text-transform: uppercase;
-	color: rgb(100, 98, 98);
+	color: #484848;
 	font-family: EB Garamond;
 	font-size: 20px;
 }
@@ -104,13 +123,16 @@ nav {
 
 nav li a:hover, nav li a:focus {
 	color:black;
-	text-decoration:underline;
+	border-bottom: 1px solid black;
+	font-weight: 1000;
 	
 }
 
 nav a:visited, .logo a:visited {
 	color: inherit;
 }
+
+/* media queries for navigation */
 
 @media screen and (max-width: 520px) {
 
@@ -171,9 +193,10 @@ nav a:visited, .logo a:visited {
 
 
 }
+/* ---- HOME PAGE ---- */
+
 
 /* hero image */
-
 
 .hero-image {
 	position: relative;
@@ -231,16 +254,18 @@ nav a:visited, .logo a:visited {
 /* image section */
 
 .image-section {
+	margin-top: 20px;
 	display: flex;
-	width: 100%;
-	margin: 0 auto;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.image {
-	flex-shrink: 1;
-	display: block;
-	padding: 10px;
+.image-section-item {
+	flex-basis: 33.33%;
+}
+
+.image-section-item img {
+	width: 100%;
 }
 
 /* footer - derived from https://codepen.io/slstudios/pen/mJqjeP */
@@ -251,7 +276,7 @@ nav a:visited, .logo a:visited {
   text-align: left;
   padding: 10px 0 30px 0;
   border-top: 1px solid black;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .footer .footer-left p {
@@ -333,13 +358,13 @@ nav a:visited, .logo a:visited {
   }
 }
 
-/* ---- info page ---- */
+/* ---- INFO PAGE ---- */
 
-/* maps */
+	/* maps */
 
 .map {
 	border: 1px solid #000;
-	width: 100%;
+	width: 50%;
 	height: 20vh;
 	margin: 27px 0 27px 0;
 }
@@ -363,7 +388,7 @@ nav a:visited, .logo a:visited {
 	list-style:disc;
 }
 
-/* time table */
+	/* time table */
 
 table {
 	margin: 20px 0 0 0;
@@ -376,10 +401,100 @@ table {
 	font-size: 20px;
 }
 
+label {
+	font-size: 18px;
+}
+
 
 tr:nth-child(even){
     background-color: #c9d5e4
 }
 
+/* ---- RSVP PAGE - derived from https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 ----*/
+
+form *{
+	font-family: EB Garamond, sans-serif;
+	font-size: 20px;
+}
+
+
+.form-outer li,
+.form-inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.form-outer label {
+	margin-right: 5px;
+}
+
+.form-outer > li > label,
+.form-outer li p {
+	flex: 1 0 120px;
+	max-width: 220px;
+}
+
+.form-outer > li > label + *,
+.form-inner {
+	flex: 1 0 220px;
+}
+
+.form-outer li button {
+	margin-left: auto;
+	padding: 8px 16px;
+	border: none;
+	background: rgb(143, 194, 78);
+	text-transform: uppercase;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.form-inner {
+	justify-content: space-between;
+}
+
+.form-outer > li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.form-outer li input:not([type='checkbox']),
+.form-outer li textarea {
+  padding: 8px;
+}
+
+
+
+
+	/* RSVP form
+.rsvp-form {
+	display: flex;
+	font-family: EB Garamond, sans-serif;
+	width: 60%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.rsvp-title {
+	margin: 15px 0 3px 0;
+}
+
+.text-input {
+	margin-bottom: 7px;
+}
+
+.rsvp-button {
+	margin: 15px 0 0 auto;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.rsvp-button input {
+	padding: 5px;
+}
+*/
 /* story timeline - derived from https://codepen.io/alvarotrigo/pen/MWEgejK */
 
