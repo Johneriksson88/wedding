@@ -37,7 +37,6 @@ h3 {
 }
 h4 {
 	margin: 15px;
-	text-decoration: underline;
 	font-size: 18px;
 }
 
@@ -388,6 +387,21 @@ nav a:visited, .logo a:visited {
 	list-style:disc;
 }
 
+.get-there-section {
+	display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+	.get-there-section {
+		flex-direction: column;
+	}
+}
+
+.get-there-column {
+	flex: 50%;
+	flex-wrap: wrap;
+}
+
 	/* time table */
 
 table {
@@ -410,7 +424,7 @@ tr:nth-child(even){
     background-color: #c9d5e4
 }
 
-/* ---- RSVP PAGE - derived from https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 ----*/
+/* ---- RSVP PAGE ---- derived from https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767*/
 
 form *{
 	font-family: EB Garamond, sans-serif;
@@ -462,39 +476,4 @@ form *{
 .form-outer li textarea {
   padding: 8px;
 }
-
-
-
-
-	/* RSVP form
-.rsvp-form {
-	display: flex;
-	font-family: EB Garamond, sans-serif;
-	width: 60%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-}
-
-.rsvp-title {
-	margin: 15px 0 3px 0;
-}
-
-.text-input {
-	margin-bottom: 7px;
-}
-
-.rsvp-button {
-	margin: 15px 0 0 auto;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-.rsvp-button input {
-	padding: 5px;
-}
-*/
-/* story timeline - derived from https://codepen.io/alvarotrigo/pen/MWEgejK */
 
