@@ -1,6 +1,6 @@
 /* font imports */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Sacramento&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Sacramento&family=Source+Sans+Pro&display=swap');
 
 /* canvas style */
 
@@ -24,8 +24,8 @@ html {
 }
 
 
-h2, h3, h4, h5, h6 {
-	font-family: EB Garamond, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: Cabin, sans-serif;
 }
 
 h2 {
@@ -203,22 +203,13 @@ nav a:visited, .logo a:visited {
   	color: white;
 	margin-bottom: 30px;
 }
-.hero-title {
-	font-family: Sacramento, sans-serif;
-	font-weight: 500;
-	font-size: 50px;
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-60%, -50%);
-}
+
 
 /* invitation text*/
 
 .invitation-important {
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .invitation-important-item {
@@ -228,7 +219,7 @@ nav a:visited, .logo a:visited {
 	flex-grow: 1;
 	flex-shrink: 1;
 	min-height: 20px;
-	text-align: center;
+	flex-wrap: wrap;
 }
 
 .invitation-important-item > * {
@@ -475,5 +466,20 @@ form *{
 .form-outer li input:not([type='checkbox']),
 .form-outer li textarea {
   padding: 8px;
+}
+
+/* ---- GALLERY PAGE ---- */
+
+.gallery {
+	clear: both;
+	line-height: 0;
+	column-count: 4;
+	column-gap: 0;
+}
+
+.gallery > img {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
 }
 
