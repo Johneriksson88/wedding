@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Cabin, sans-serif;
 }
 
+h1 {
+	font-weight: 500;
+}
+
 h2 {
 	margin: 20px 0 20px 0;
 }
@@ -473,12 +477,27 @@ form *{
 .gallery {
 	clear: both;
 	line-height: 0;
-	column-count: 4;
+	column-count: 3;
 	column-gap: 0;
 }
 
 .gallery > img {
 	width: 100%;
-	margin: 0 auto;
-	padding: 0;
+}
+
+.gallery-image {
+	width: 250px;
+}
+
+/* gallery media query for mobile and tablet screens */
+
+@media screen and (max-width: 1000px) {
+	.gallery {
+		column-count: 2;
+	}
+}
+@media screen and (max-width: 640px) {
+	.gallery {
+		column-count: 1;
+	}
 }
