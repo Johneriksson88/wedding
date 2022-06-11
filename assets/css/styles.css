@@ -1,6 +1,6 @@
 /* font imports */
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Sacramento&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Great+Vibes&family=Libre+Baskerville&family=Sacramento&family=Source+Sans+Pro&display=swap');
 
 /* canvas style */
 
@@ -8,8 +8,14 @@
 	margin: 100px auto;
 	border: 1px solid #DBC3AD;
 	max-width: 1000px;
-	padding: 100px 100px 0;
+	padding: 50px 100px 50px;
 	background-color: white;
+}
+
+@media screen and (max-width: 520px) {
+	#canvas {
+		padding: 100px 50px 0;
+	}
 }
 
 /* general styling and fonts*/
@@ -25,11 +31,13 @@ html {
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Cabin, sans-serif;
+	font-family: Cormorant Garamond, sans-serif;
 }
 
 h1 {
 	font-weight: 500;
+	font-family: Great Vibes, sans-serif;
+	font-size: 45px;
 }
 
 h2 {
@@ -135,6 +143,7 @@ nav a:visited, .logo a:visited {
 	color: inherit;
 }
 
+
 /* media queries for navigation */
 
 @media screen and (max-width: 520px) {
@@ -209,9 +218,15 @@ nav a:visited, .logo a:visited {
 }
 
 
-/* invitation text*/
+/* invitation text */
 
-.invitation-important {
+.invitation-important-upper {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.invitation-important-lower {
 	display: flex;
 	justify-content: center;
 }
@@ -231,11 +246,19 @@ nav a:visited, .logo a:visited {
 }
 
 
-.invitation h3 {
+.invitation-important-item h2 {
 	line-height: 1.3em;
+	font-weight: 800;
+	font-size: 30px;
 }
 
-.invitation-important a {
+.invitation-important-item h3 {
+	line-height: 1.3em;
+	font-weight: 800;
+	font-size: 24px;
+}
+
+.invitation-important-lower a {
 	color: black;
 	text-decoration: underline;
 }
@@ -248,7 +271,7 @@ nav a:visited, .logo a:visited {
 /* image section */
 
 .image-section {
-	margin-top: 20px;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -262,7 +285,13 @@ nav a:visited, .logo a:visited {
 	width: 100%;
 }
 
-/* footer - derived from https://codepen.io/slstudios/pen/mJqjeP */
+@media only screen and (max-width: 640px) {
+	.image-section {
+		flex-direction: column;
+	}
+}
+
+/* ---- FOOTER ---- derived from https://codepen.io/slstudios/pen/mJqjeP */
 
 .footer {
   box-sizing: border-box;
@@ -358,8 +387,8 @@ nav a:visited, .logo a:visited {
 
 .map {
 	border: 1px solid #000;
-	width: 50%;
-	height: 20vh;
+	width: 70%;
+	height: 17vh;
 	margin: 27px 0 27px 0;
 }
 
@@ -408,6 +437,10 @@ table {
 	width: 100%;
 	font-family: EB Garamond;
 	font-size: 20px;
+}
+
+tbody > tr > th {
+	font-weight: 500;
 }
 
 label {
@@ -472,6 +505,11 @@ form *{
   padding: 8px;
 }
 
+@media screen and (max-width: 640px) {
+.allergy-input-field {
+	width: 100%;
+}
+}
 /* ---- GALLERY PAGE ---- */
 
 .gallery {
