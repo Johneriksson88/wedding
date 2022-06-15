@@ -1,8 +1,8 @@
 # John and Helenas wedding site
 
-John and Helenas wedding site is a digital and interactive form of wedding invitation. It's a place where the invited wedding guests can find information about the wedding, RSVP and look at inspirational pictures of the couple.
+John and Helenas wedding site is a digital and interactive form of wedding invitation to our wedding. It's a place where the invited wedding guests can find information about the wedding, RSVP and look at inspirational pictures of the couple.
 
-![Responsive Mockup](https://github.com/Johneriksson88/wedding/blob/main/assets/images/wedding-screenshots.png?raw=true)
+![Responsive Mockup](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/wedding-screenshots.png?raw=true)
 
 ## Features 
 
@@ -16,12 +16,12 @@ In this section, you should go over the different parts of your project, and des
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
   - The clickable "hamburger" type menu appears at screen widths at 520px or smaller and was created after watching [this](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1394s&ab_channel=KevinPowell) tutorial by YouTuber Kevin Powell.
 
-![Nav Bar](https://github.com/Johneriksson88/wedding/blob/main/assets/images/nav-screenshot.png?raw=true)
+![Nav Bar](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/nav-screenshot.png?raw=true)
 
 - __The landing page image__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+    - The landing page image is a photograph of John and Helena lovingly staring into each others eyes, with a nice tile background with a heart in it. It represents the love that will be celebrated at the wedding, and is intended to put the visitor in a good mood for going to our wedding.
+    - Under the landing page image is the most important information: a "Welcome to our wedding!", a short introductory text and date and location under it.
 
 ![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
