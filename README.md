@@ -18,40 +18,44 @@ In this section, you should go over the different parts of your project, and des
 
 ![Nav Bar](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/nav-screenshot.png?raw=true)
 
-- __The landing page image__
+- __Landing page__
 
     - The landing page image is a photograph of John and Helena lovingly staring into each others eyes, with a nice tile background with a heart in it. It represents the love that will be celebrated at the wedding, and is intended to put the visitor in a good mood for going to our wedding.
     - Under the landing page image is the most important information: a "Welcome to our wedding!", a short introductory text and date and location under it.
+    - Under that are three images to neatly frame the invitation information and add some more color to the otherwise black and white page.
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![Landing Page](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/landing-page-screenshot.png?raw=true)
 
-- __Club Ethos Section__
+- __Info page__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The info page contains all the information about the wedding, divided under the three sections of When, Where and How.
+  - The Where section has clickable embedded Google Maps-links for the location of the bus stop and the wedding location.
+  - The How section has every bit of practical information the guests need for preparation, along with a short schedule in a table format.
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![Info Page](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/info-page-screenshot.png?raw=true)
 
-- __Meetup Times section__
+- __RSVP Page__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This page contains a simple form for the guests to RSVP to the wedding.
+  - Required fields are name, email and number of guests. All other fields are optional.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![RSVP Form](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/rsvp-screenshot.png?raw=true)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The footer section includes links to all pages on the website, as well ass the relevant social media sites for John. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media, and lets them navigate when they've scrolled all the way down.
+  - The footer has a small copyright text to inform the user of the author.
 
 ![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
 - __Gallery__
 
   - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together.
+  - The gallery shows a bunch of different pictures of John and Helena together to inspire them for e.g. gifts, outfits or a speech. The image masonry style layout was inspired by the Love Running Gallery.
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+![Gallery](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/gallery-screenshot.png?raw=true)
 
 - __The Sign Up Page__
 
