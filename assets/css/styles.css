@@ -131,6 +131,9 @@ nav {
   flex-wrap: wrap;
   text-decoration: none;
 }
+.top-nav a:visited, a:link {
+	color:#000;
+  }
 
 .active {
   border-bottom: 1px solid black;
