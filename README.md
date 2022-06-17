@@ -47,62 +47,70 @@ In this section, you should go over the different parts of your project, and des
   - The footer is valuable to the user as it encourages them to keep connected via social media, and lets them navigate when they've scrolled all the way down.
   - The footer has a small copyright text to inform the user of the author.
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Footer](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/footer-screenshot.png?raw=true)
 
 - __Gallery__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together.
   - The gallery shows a bunch of different pictures of John and Helena together to inspire them for e.g. gifts, outfits or a speech. The image masonry style layout was inspired by the Love Running Gallery.
 
 ![Gallery](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/gallery-screenshot.png?raw=true)
 
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
-- Another feature idea
+- A future idea is to add a page with a story timeline, where the user can see a timeline with pictures of events through the couples relationship, from the first date to the wedding.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+Apart from the two validator tests, the most continuous testing of the project has been testing different screen widths to make sure the website is responsive all along different screen widths. I opened the finished project on my iPhone and made sure it looked good in Safari as well as Chrome.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Since this is my first website project you could say the whole thing was a bit of a test. Testing different ways to display my content, images, using flexbox etc.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### Lighthouse test ###
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I used the Lightouse test in Google Devtools mainly to ensure the accessibility of the website. The performance part could have been improved by changing image sizes. Had this been a project for a customer i would take time to improve this, but since this will not be viewed by that many people, i don't think that is that important.
 
+![Lighthouse test](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/lighthouse-test-screenshot.png?raw=true)
+
+### Responsiveness ###
+
+As i build the website i continuously fooled around with the screen width to ensure the content i added was displayed correctly on all screen widths. I added media queries here and there, where there was a breaking point in the displaying of the content. Mainly i found the pictures needed media queries, and in the places where i used flexbox i simply changed the flex-direction from row to column where needed.
+
+### Interesting bugs/errors ###
+
+While putting the index.html through the W3C Validator I got these errors:
+
+- Start tag body seen but an element of the same type was already open.
+- End tag for body seen, but there were unclosed elements.
+- Unclosed element div.
+- Saw an end tag after body had been closed.
+
+These errors are due to the canvas look of the page. The "paper" in which the content is confined is a div, so the body tag is within that div. The validator considers that an error. In discussions with my mentor he confirmed that i could do this without problems, so i chose to not change that since the canvas style is part of the design i strived for.
+
+After i put the styles.css through the Jigsaw Validator i got these warnings:
+- Family names containing whitespace should be quoted. If quoting is omitted, any whitespace characters before and after the name are ignored and any sequence of whitespace characters inside the name is converted to a single space.
+
+These warnings appeared on all lines where i declared a font family containing a space in the font family name. After a bit of googling i learned that these errors were harmless and unneccesary, however i chose to add single quotes to the font family names to get a clean validation.
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - Apart from the above mentioned, no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohneriksson88.github.io%2Fwedding%2Findex.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohneriksson88.github.io%2Fwedding%2Fassets%2Fcss%2Fstyles.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+Apart from the aforementioned error message regarding the body tag, no apparent unfixed bugs appear.
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://johneriksson88.github.io/wedding/index.html
 
 
 ## Credits 
