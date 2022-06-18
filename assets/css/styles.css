@@ -281,23 +281,23 @@ nav a:visited,
 
 /* image section */
 
-.image-section {
+.image-row {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.image-section-item {
+.image-row-item {
   flex-basis: 33.33%;
 }
 
-.image-section-item img {
+.image-row-item img {
   width: 100%;
 }
 
 @media only screen and (max-width: 640px) {
-  .image-section {
+  .image-row {
     flex-direction: column;
   }
 }
