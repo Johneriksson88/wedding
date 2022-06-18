@@ -6,13 +6,11 @@ John and Helenas wedding site is a digital and interactive form of wedding invit
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Home page, Wedding info, RSVP and Gallery page and is identical in each page to allow for easy navigation.
+  - Featured on all four pages, the full responsive navigation bar includes links to the Home page, Wedding info, RSVP and Gallery page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
   - The clickable "hamburger" type menu appears at screen widths at 520px or smaller and was created after watching [this](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1394s&ab_channel=KevinPowell) tutorial by YouTuber Kevin Powell.
 
@@ -21,7 +19,7 @@ In this section, you should go over the different parts of your project, and des
 - __Landing page__
 
     - The landing page image is a photograph of John and Helena lovingly staring into each others eyes, with a nice tile background with a heart in it. It represents the love that will be celebrated at the wedding, and is intended to put the visitor in a good mood for going to our wedding.
-    - Under the landing page image is the most important information: a "Welcome to our wedding!", a short introductory text and date and location under it.
+    - Under the landing page image the user first gets informed they are invited to our wedding and then can read a short introductory text with date and location under it.
     - At the bottom of the section are three images to neatly frame the invitation information and add some more color to the otherwise black and white page.
 
 ![Landing Page](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/landing-page-screenshot.png?raw=true)
@@ -44,7 +42,7 @@ In this section, you should go over the different parts of your project, and des
 
 - __The Footer__ 
 
-  - The footer section includes links to all pages on the website, as well ass the relevant social media sites for John. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer section includes links to all pages on the website, as well as the relevant social media sites for John. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media, and lets them navigate when they've scrolled all the way down.
   - The footer has a small copyright text to inform the user of the author.
 
@@ -60,10 +58,11 @@ In this section, you should go over the different parts of your project, and des
 ### Features Left to Implement
 
 - A future idea is to add a page with a story timeline, where the user can see a timeline with pictures of events through the couples relationship, from the first date to the wedding.
+- Another interesting addition would be to develop the process of booking rooms.
 
 ## Testing 
 
-Apart from the two validator tests, the most continuous testing of the project has been testing different screen widths to make sure the website is responsive throughout. I opened the finished project on my iPhone and made sure it looked good in Safari as well as Chrome.
+Apart from the two validator tests, the most continuous testing of the project has been testing different screen widths to make sure the website is responsive throughout. I opened the finished project on my iPhone 13 and my wifes iPhone 12, and made sure it looked good in Safari as well as in Chrome.
 
 ### Lighthouse test ###
 
@@ -111,7 +110,7 @@ The live link can be found here - https://johneriksson88.github.io/wedding/index
 ### Content 
 
 - The text for all of the website was written by me in consulting with my wife
-- Instructions on how to create a responsive form came from [this tutorial](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767)
+- Instructions on how to create a responsive form came from [this tutorial](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) by George Martsoukos
 - Instructions on how to create a responsive navigation bar with hamburger menu came from [this tutorial](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1394s&ab_channel=KevinPowell) by Kevin Powell 
 - Code for the footer was derived from [this code](https://codepen.io/slstudios/pen/mJqjeP) from Codepen user slstudios
 - Instructions on how to create a masonry style gallery came from the Love Running Project in Code Institutes Full Stack Developer Course
@@ -120,6 +119,6 @@ The live link can be found here - https://johneriksson88.github.io/wedding/index
 ### Media
 
 - All photos used on the website except one came from me and my wife
-- Hand drawen caricature style portrait of me and my wife drawn by Anton Selvin
+- Hand drawen caricature style portrait of me and my wife drawn by Anton Salvin
 - The icons for the social media in the footer and on the info page were taken from [Font Awesome](https://fontawesome.com/)
 
