@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="John Eriksson Helena Norrelyn wedding invitation at Lydinge Säteri RSVP">
-    <meta name="keywords" content="John Eriksson Helena Norrelyn wedding RSVP">
-    <meta name="author" content="John Eriksson">
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Welcome to John and Helenas Wedding</title>
-  </head>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Eriksson Helena Norrelyn wedding invitation at Lydinge Säteri RSVP">
+  <meta name="keywords" content="John Eriksson Helena Norrelyn wedding RSVP">
+  <meta name="author" content="John Eriksson">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Welcome to John and Helenas Wedding</title>
+</head>
+
+<body>
   <!-- canvas style -->
 
   <div id="canvas">
@@ -39,143 +41,94 @@
       </nav>
     </header>
 
-    <body>
 
-      <!-- RSVP form -->
 
-      <form action="#">
-        <ul class="form-outer">
-          <li>
-            <label for="name">Full name *</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter full name here"
-              required
-            />
-          </li>
-          <li>
-            <label for="no-persons">Total number of persons *</label>
-            <input
-              class="text-input"
-              type="number"
-              id="no-persons"
-              name="no-persons"
-              min="1"
-              max="10"
-              placeholder="1"
-              required
-            />
-          </li>
-          <li>
-            <label for="email">Email *</label>
-            <input
-              class="text-input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email@hotmail.com"
-              required
-            />
-          </li>
-          <li>
-            <p>Food allergies/preferences</p>
-            <ul class="form-inner">
-              <li>
-                <input
-                  type="checkbox"
-                  id="vegetarian"
-                  value="vegetarian"
-                  name="food"
-                />
-                <label for="vegetarian">Vegetarian</label>
-              </li>
-              <li>
-                <input 
-                type="checkbox" 
-                id="vegan" 
-                value="vegan" 
-                name="food" />
-                <label for="vegan">Vegan</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="allergy"
-                  value="allergy"
-                  name="allergy"
-                />
-                <label for="allergy">Allergy</label>
-                <input
-                  class="text-input allergy-input-field"
-                  type="text"
-                  id="allergy-type"
-                  name="allergy"
-                  placeholder="E.g. gluten"
-                />
-              </li>
-            </ul>
-          </li>
-          <li>
-            <label for="song">A song you'd like to dance to</label>
-            <input
-              class="text-input"
-              type="text"
-              id="song"
-              name="song"
-              placeholder="E.g ABBA - Dancing queen"
-            />
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea
-              rows="6"
-              id="message"
-              name="message"
-              placeholder="Your message to us and/or booking (specify how many rooms for how many persons)"
-            ></textarea>
-          </li>
-          <li>
-            <button type="submit">RSVP</button>
-          </li>
-        </ul>
-      </form>
+    <!-- RSVP form -->
 
-      <!-- footer -->
+    <form action="#">
+      <ul class="form-outer">
+        <li>
+          <label for="name">Full name *</label>
+          <input type="text" id="name" placeholder="Enter full name here" required />
+        </li>
+        <li>
+          <label for="no-persons">Total number of persons *</label>
+          <input class="text-input" type="number" id="no-persons" name="no-persons" min="1" max="10" placeholder="1"
+            required />
+        </li>
+        <li>
+          <label for="email">Email *</label>
+          <input class="text-input" type="email" id="email" name="email" placeholder="email@hotmail.com" required />
+        </li>
+        <li>
+          <p>Food allergies/preferences</p>
+          <ul class="form-inner">
+            <li>
+              <input type="checkbox" id="vegetarian" value="vegetarian" name="food" />
+              <label for="vegetarian">Vegetarian</label>
+            </li>
+            <li>
+              <input type="checkbox" id="vegan" value="vegan" name="food" />
+              <label for="vegan">Vegan</label>
+            </li>
+            <li>
+              <input type="checkbox" id="allergy" value="allergy" name="allergy" />
+              <label for="allergy">Allergy</label>
+              <input class="text-input allergy-input-field" type="text" id="allergy-type" name="allergy"
+                placeholder="E.g. gluten" />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <label for="song">A song you'd like to dance to</label>
+          <input class="text-input" type="text" id="song" name="song" placeholder="E.g ABBA - Dancing queen" />
+        </li>
+        <li>
+          <label for="message">Message</label>
+          <textarea rows="6" id="message" name="message"
+            placeholder="Your message to us and/or booking (specify how many rooms for how many persons)"></textarea>
+        </li>
+        <li>
+          <button type="submit">RSVP</button>
+        </li>
+      </ul>
+    </form>
 
-      <footer class="footer">
-        <div class="footer-right">
-          <a href="https://www.facebook.com/johneliaseriksson" target="_blank" aria-label="Link to Johns facebook">
-            <i class="fa fa-facebook"></i></a>
-          <a href="emailto:john.e.eriksson@gmail.com" target="_blank" aria-label="Link to email John">
-            <i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/john-eriksson-890265237/" target="_blank" aria-label="Link to Johns linkedin">
-            <i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/johneliaseriksson/" target="_blank" aria-label="Link to Johns instagram">
-            <i class="fa-brands fa-instagram-square"></i></a>
-        </div>
+    <!-- footer -->
 
-        <div class="footer-left">
-          <p class="footer-links">
-            <a class="link-1" href="index.html">Home</a>
+    <footer class="footer">
+      <div class="footer-right">
+        <a href="https://www.facebook.com/johneliaseriksson" target="_blank" aria-label="Link to Johns facebook">
+          <i class="fa fa-facebook"></i></a>
+        <a href="emailto:john.e.eriksson@gmail.com" target="_blank" aria-label="Link to email John">
+          <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/john-eriksson-890265237/" target="_blank"
+          aria-label="Link to Johns linkedin">
+          <i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/johneliaseriksson/" target="_blank" aria-label="Link to Johns instagram">
+          <i class="fa-brands fa-instagram-square"></i></a>
+      </div>
 
-            <a href="info.html">Info</a>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="index.html">Home</a>
 
-            <a href="rsvp.html">RSVP</a>
+          <a href="info.html">Info</a>
 
-            <a href="gallery.html">Gallery</a>
-          </p>
+          <a href="rsvp.html">RSVP</a>
 
-          <p>John Eriksson &copy; 2022</p>
-        </div>
-      </footer>
+          <a href="gallery.html">Gallery</a>
+        </p>
 
-      <!-- font awesome script -->
+        <p>John Eriksson &copy; 2022</p>
+      </div>
+    </footer>
 
-      <script
-        src="https://kit.fontawesome.com/17e7553796.js"
-        crossorigin="anonymous"
-      ></script>
-    </body>
+    <!-- font awesome script -->
+
+    <script src="https://kit.fontawesome.com/17e7553796.js" crossorigin="anonymous"></script>
+
   </div>
+</body>
+
 </html>
