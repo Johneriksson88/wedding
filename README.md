@@ -67,7 +67,7 @@ Apart from the two validator tests, the most continuous testing of the project h
 
 ### Lighthouse test ###
 
-I used the Lightouse test in Google Devtools mainly to ensure the accessibility of the website. The performance part could have been improved by changing image sizes. Had this been a project for a customer i would take time to improve this, but since this will not be viewed by that many people, i don't think that is that important.
+I used the Lightouse test in Google Devtools mainly to ensure the accessibility of the website.
 
 ![Lighthouse test](https://github.com/Johneriksson88/wedding/blob/main/assets/images/screenshots/lighthouse-test-screenshot.png?raw=true)
 
@@ -77,37 +77,31 @@ As i build the website i continuously fooled around with the screen width to ens
 
 ### Interesting bugs/errors ###
 
-While putting all four pages through the W3C Validator I got these errors:
-
-- Start tag body seen but an element of the same type was already open.
-- End tag for body seen, but there were unclosed elements.
-- Unclosed element div.
-- Saw an end tag after body had been closed.
-
-These errors are due to the canvas look of the page. The "paper" in which the content is confined is a div, so the body tag is within that div. The validator considers that an error. In discussions with my mentor he confirmed that i could do this without problems, so i chose to not change that since the canvas style is part of the design i strived for.
-
 After i put the styles.css through the Jigsaw Validator i got these warnings:
 
 - Family names containing whitespace should be quoted. If quoting is omitted, any whitespace characters before and after the name are ignored and any sequence of whitespace characters inside the name is converted to a single space.
 
-These warnings appeared on all lines where i declared a font family containing a space in the font family name. After a bit of googling i learned that these errors were harmless and unneccesary, however i chose to add single quotes to the font family names to get a clean validation.
+These warnings appeared on all lines where i declared a font family containing a space in the font family name. After a bit of googling i learned that these errors were harmless, however i chose to add single quotes to the font family names to get a clean validation.
 
 ### Validator Testing 
 
 - HTML
-  - Apart from the above mentioned, no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohneriksson88.github.io%2Fwedding%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohneriksson88.github.io%2Fwedding%2F)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohneriksson88.github.io%2Fwedding%2Fassets%2Fcss%2Fstyles.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
-Apart from the aforementioned error message regarding the body tag, no apparent unfixed bugs appear.
+No apparent unfixed bugs appear.
 
 ## Deployment
 
-The site was deployed to GitHub pages.
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-At the first deployment, neither the css nor the images loaded on the website. After a bit of googling i realized that all file names started with a "/" (i.e /assets/css/styles.css) and that caused them not to load. I removed the "/" and it worked fine.  
+- At the first deployment, neither the css nor the images loaded on the website. After a bit of googling i realized that all file names started with a "/" (i.e /assets/css/styles.css) and that caused them not to load. I removed the "/" from all file names and it worked fine.  
 
 The live link can be found here - https://johneriksson88.github.io/wedding/index.html
 
